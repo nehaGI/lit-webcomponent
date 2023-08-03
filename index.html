@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lit Component - RUF Menubar</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="./index.ts"></script>
+  </head>
+  <body>
+    <!-- New RUF Menubar built using Lit Elements -->
+
+    <ruf-menubar-lit>
+      <ruf-menubar-item-lit path="/item1" data='{"name": "Agent 47"}'
+        >item1</ruf-menubar-item-lit
+      >
+      <ruf-menubar-item-lit path="/item2" data='{"name": "Agent 48"}'
+        >item2</ruf-menubar-item-lit
+      >
+      <ruf-menubar-item-lit
+        path="/item3"
+        data='{"profession": "Hitman"}'
+        nonselectable="true"
+        >item3</ruf-menubar-item-lit
+      >
+      <ruf-menubar-item-lit path="/item4">item4</ruf-menubar-item-lit>
+      <ruf-menubar-item-lit path="/item5">item5</ruf-menubar-item-lit>
+    </ruf-menubar-lit>
+
+    <!-- //****************************************************************************//  -->
+    <ruf-sidemenu>
+      <ruf-sidemenu-item path="/item1" data='{"name": "Agent 47"}'
+        >item1</ruf-sidemenu-item
+      >
+      <ruf-sidemenu-item path="/item2" data='{"name": "Agent 47"}'
+        >item2</ruf-sidemenu-item
+      >
+      <ruf-sidemenu-item
+        path="/item3"
+        data='{"profession": "Hitman"}'
+        nonselectable="true"
+        >item3</ruf-sidemenu-item
+      >
+      <ruf-sidemenu-item path="/item4" disabled=true>item4</ruf-sidemenu-item>
+      <ruf-sidemenu-item path="/item5" data='{"name": "Agent 48"}'
+        >item5</ruf-sidemenu-item
+      >
+    </ruf-sidemenu>
+  </body>
+</html>
